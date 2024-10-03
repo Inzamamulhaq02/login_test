@@ -9,6 +9,6 @@
   "env": {
     "DJANGO_SETTINGS_MODULE": "gold.settings",
     "PYTHONUNBUFFERED": "1",
-    "DATABASE_URL": "mysql://ueti7bte5qnrumgu:doP6kM3a5Q4KdDT9eNg8@bec67ijpxesfqd4cdq3f-mysql.services.clever-cloud.com:3306/bec67ijpxesfqd4cdq3f" // Ensure your DB URL is set here
+    "DATABASE_URL": "mysql://ueti7bte5qnrumgu:doP6kM3a5Q4KdDT9eNg8@bec67ijpxesfqd4cdq3f-mysql.services.clever-cloud.com:3306/bec67ijpxesfqd4cdq3f" 
   }
 }
