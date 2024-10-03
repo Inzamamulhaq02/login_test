@@ -1,9 +1,13 @@
 {
   "version": 2,
   "builds": [
-    { "src": "api/*.py", "use": "@vercel/python" }
+    { "src": "Dockerfile", "use": "@vercel/docker" }
   ],
   "routes": [
-    { "src": "/api", "dest": "/chit/api.py" }
-  ]
+    { "src": "/(.*)", "dest": "/" }
+  ],
+  "env": {
+    "DJANGO_SETTINGS_MODULE": "gold.settings",
+    "PYTHONUNBUFFERED": "1"
+  }
 }
