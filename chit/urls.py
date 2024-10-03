@@ -1,5 +1,5 @@
 from django.urls import path
-from .views import *
+from .api import *
 
 urlpatterns = [
     path('installment/', UserInstallmentView.as_view(), name='user_installment'),
