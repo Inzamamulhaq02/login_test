@@ -2,8 +2,8 @@
 FROM python:3.9-slim
 
 # Set environment variables.
-ENV PYTHONDONTWRITEBYTECODE 1
-ENV PYTHONUNBUFFERED 1
+ENV PYTHONDONTWRITEBYTECODE=1
+ENV PYTHONUNBUFFERED=1
 
 # Set the working directory.
 WORKDIR /app
@@ -12,7 +12,7 @@ WORKDIR /app
 COPY ./requirements.txt /app/requirements.txt
 RUN pip install --upgrade pip && pip install -r /app/requirements.txt
 
-# Copy project.
+# Copy project files to the container.
 COPY . /app/
 
 # Expose the port
